@@ -89,12 +89,12 @@ footer{
 
 #section1{
   position: relative;
-  height: 832px;
+  min-height: 832px;
 }
 
 #section2{
   position: relative;
-  height: 928px;
+  min-height: 928px;
 }
 
 #section2>.desc{
@@ -105,7 +105,8 @@ footer{
 }
 
 #sec2desc {
-  margin-top: 78px
+  margin-top: 70px;
+  line-height: 50px;
 }
 
 
@@ -114,7 +115,7 @@ footer{
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 870px;
+  min-height: 870px;
   text-align: center;
 }
 
@@ -167,7 +168,7 @@ footer{
 
 #section4{
   display: flex;
-  height: 1190px;
+  min-height: 1190px;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
@@ -183,7 +184,7 @@ footer{
 }
 
 #section5{
-  height: 972px;
+  min-height: 972px;
   text-align: center;
 }
 
@@ -198,7 +199,7 @@ footer{
    font-size: 64px;
    display: inline-block;
    height:102px;
-  vertical-align: middle;
+   white-space: nowrap
  }
 .ic_square::before {
   display: inline-block;
@@ -261,18 +262,24 @@ footer{
 }
 
 .address {
+  margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .left{
-  width: 308px;
-  margin-right: 244px;
+  width: 468px;
+  margin-left:80px;
+  margin-right:80px;
 }
 
 .right{
   width: 468px;
+  margin-left:80px;
+  margin-right:80px;
 }
 
 .card {
@@ -321,6 +328,7 @@ footer{
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .qr-container {
