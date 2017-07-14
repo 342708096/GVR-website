@@ -99,8 +99,9 @@ footer{
 
 #section2>.desc{
   position: absolute;
-  left:540px;
-  top:325px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #sec2desc {
@@ -145,12 +146,22 @@ footer{
 
 .ic_block_01 {
   background: url(../img/ic_block_01.png) no-repeat;
-  box-shadow: 0px -25px 50px -10px rgba(18, 215, 250, 0.4);
+  transition: box-shadow .5s ease;
 }
 
 .ic_block_02 {
   background: url(../img/ic_block_02.png) no-repeat;
+  transition: box-shadow .5s ease;
+}
+
+#section3:hover .ic_block_01 {
+  box-shadow: 0px -25px 50px -10px rgba(18, 215, 250, 0.4);
+  transition: box-shadow .5s ease;
+}
+
+#section3:hover .ic_block_02 {
   box-shadow: 0px 20px 50px -10px rgba(18, 215, 250, 0.4);
+  transition: box-shadow .5s ease;
 }
 
 
@@ -185,12 +196,13 @@ footer{
 
 .ic_square{
    font-size: 64px;
-   display: inline;
-  line-height: 102px;
-  vertical-align: top;
+   display: inline-block;
+   height:102px;
+  vertical-align: middle;
  }
 .ic_square::before {
   display: inline-block;
+  vertical-align: middle;
   width: 32px;
   height: 102px;
   margin-right: 10px;
@@ -198,8 +210,13 @@ footer{
   content: ' '
 }
 
+.ic_square > * {
+  vertical-align: middle;
+}
+
 .ic_square::after {
   display: inline-block;
+  vertical-align: middle;
   width: 32px;
   height: 102px;
   margin-left: 10px;
@@ -222,12 +239,16 @@ footer{
 
 .ic_circular .name{
   position: absolute;
-  bottom: 0
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .ic_circular .desc{
   position: absolute;
-  top: 268px
+  top: 268px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 #show-all {
@@ -306,6 +327,10 @@ footer{
   border: 2px solid #12b2fa;
   width: 150px;
   height: 150px;
+}
+
+.qr-desc {
+  margin-top:17px;
 }
 
 
