@@ -207,7 +207,8 @@ footer{
   width: 32px;
   height: 102px;
   margin-right: 10px;
-  background: url("../img/ic_squae_left.png");
+  background: url("../img/ic_squae_left.png") no-repeat;
+  background-size: cover;
   content: ' '
 }
 
@@ -221,7 +222,8 @@ footer{
   width: 32px;
   height: 102px;
   margin-left: 10px;
-  background: url("../img/ic_square_right.png");
+  background: url("../img/ic_square_right.png") no-repeat;
+  background-size: cover;
   content: ' '
 }
 
@@ -229,7 +231,8 @@ footer{
   width:256px;
   height:256px;
   border-radius: 50%;
-  background: url(../img/ic_circular.png) no-repeat;
+  background: url("../img/ic_circular.png") no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
