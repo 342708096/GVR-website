@@ -100,7 +100,7 @@ footer{
 
 #section2{
   position: relative;
-  min-height: 928px;
+  height: 928px;
 }
 
 #section2>.desc{
@@ -118,17 +118,26 @@ footer{
 
 #section3{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 870px;
+  align-content: center;
+  min-height: 700px;
   text-align: center;
+}
+
+.flex_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .ic_block_01,.ic_block_02 {
   width:330px;
   height:266px;
-  margin:0 10px;
+  margin:10px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -152,16 +161,16 @@ footer{
 }
 
 .ic_block_01 {
-  background: url(../img/ic_block_01.png) no-repeat;
+  background: url('../img/ic_block_01.png') center center no-repeat;
   transition: box-shadow .5s ease;
 }
 
 .ic_block_02 {
-  background: url(../img/ic_block_02.png) no-repeat;
+  background: url('../img/ic_block_02.png') center center no-repeat;
   transition: box-shadow .5s ease;
 }
 
-#section3:hover .ic_block_01 {
+#section3 .ic_block_01 {
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -170,7 +179,7 @@ footer{
   animation-name: glowing-shadow_01;
 }
 
-#section3:hover .ic_block_02 {
+#section3 .ic_block_02 {
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -259,7 +268,7 @@ footer{
   width: 32px;
   height: 102px;
   margin-left: 10px;
-  background: url("../img/ic_square_right.png") no-repeat;
+  background: url("../img/ic_square_right.png") center center no-repeat;
   background-size: cover;
   content: ' '
 }
@@ -268,13 +277,13 @@ footer{
   width:256px;
   height:256px;
   border-radius: 50%;
-  background: url("../img/ic_circular.png") no-repeat;
+  background: url("../img/ic_circular.png") center center  no-repeat;
   background-size: cover;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0 12px;
+  margin: 12px;
   position: relative;
 }
 

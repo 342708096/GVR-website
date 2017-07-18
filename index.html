@@ -34,6 +34,7 @@
     </div>
   </div>
   <div id="section3">
+    <div class="flex_container">
     <div class="ic_block_01">
       <img src="static/img/ic_media.png" alt="">
       <p class="desc c1">
@@ -46,6 +47,8 @@
         最大限度减少开发时间
       </p>
     </div>
+    </div>
+    <div class="flex_container">
     <div class="ic_block_01">
       <img src="static/img/ic_fluent.png" alt="">
       <p class="desc c1">
@@ -58,9 +61,10 @@
         运算技术还原图像本质
       </p>
     </div>
+    </div>
   </div>
   <div id="section4">
-    <div style="margin-top:200px">
+    <div style="margin-top:100px">
     <span class="ic_square" ><span>具有影响力的团队</span></span>
     </div>
     <p class="t3" style="margin-top: 55px;line-height: 55px">
@@ -89,7 +93,7 @@
     <a id="show-all" class="t5" style="margin-top: 150px;" href="javascript: void(0) ">展示所有团队成员</a>
   </div>
   <div id="section5">
-    <div style="margin-top:118px">
+    <div style="margin-top:100px">
       <span class="ic_square"><span>关注最新动态</span></span>
     </div>
     <div class="address" style="margin-top: 138px">
@@ -133,9 +137,12 @@
 </footer>
 <script src="static/js/particles.min.js"></script>
 <script>
-  particlesJS.load('section2', 'static/json/particles.json', function() {
-    console.log('callback - particles.js config loaded');
+  window.addEventListener('DOMContentLoaded', function(){
+    particlesJS.load('section2', 'static/json/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
   });
+
   var $showModal = document.querySelector('#showModal'),
    $closeModal = document.querySelector('#closeModal'),
   $modal = document.querySelector('#modal');
