@@ -137,12 +137,9 @@
 </footer>
 <script src="static/js/particles.min.js"></script>
 <script>
-  window.addEventListener('DOMContentLoaded', function(){
-    particlesJS.load('section2', 'static/json/particles.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
+  particlesJS.load('section2', 'static/json/particles.json', function() {
+    console.log('callback - particles.js config loaded');
   });
-
   var $showModal = document.querySelector('#showModal'),
    $closeModal = document.querySelector('#closeModal'),
   $modal = document.querySelector('#modal');
