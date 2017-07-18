@@ -55,6 +55,11 @@ a{
   text-decoration: none
 }
 
+a:link {color: inherit} /* 未访问的链接 */
+a:visited {color: inherit} /* 已访问的链接 */
+a:hover {color: inherit} /* 当有鼠标悬停在链接上 */
+a:active {color: inherit}
+
 
 li{
   list-style: none
@@ -376,6 +381,13 @@ footer{
   margin-top:17px;
 }
 
+.t1 {
+  font-size: 64px
+}
+
+.t2 {
+  font-size: 40px
+}
 
 .t3 {
   font-size: 34px
@@ -391,4 +403,29 @@ footer{
 
 .c1 {
   color:#12b2fa;
+}
+
+#modal {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  background-color: rgba(18, 178, 250, 0.8);
+  text-align: left;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.3s;
+}
+
+#modal.open {
+  bottom: 0;
+  transition: all linear 0.3s;
+}
+
+.cursor {
+  cursor: pointer;
 }
