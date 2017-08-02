@@ -186,13 +186,6 @@ footer{
   text-align: center;
 }
 
-#ic_logo_01{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .ic_square{
    font-size: 64px;
    display: inline-block;
@@ -376,13 +369,16 @@ footer{
   bottom: 100%;
   background-color: rgba(18, 178, 250, 0.8);
   text-align: left;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
   transition: bottom ease 0.3s;
 }
 
 #modal.open {
   bottom: 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
